@@ -1,0 +1,59 @@
+<!--
+  Generated template for the AddWatchingItemPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add a TV-Show or Movie</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [(ngModel)]="item.name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Type</ion-label>
+      <ion-select [(ngModel)]="item.type">
+        <ion-option>TV</ion-option>
+        <ion-option>Movie</ion-option>
+        </ion-select>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Status</ion-label>
+      <ion-select [(ngModel)]="item.status">
+        <ion-option>Watching</ion-option>
+        <ion-option>Completed</ion-option>
+        <ion-option>Plan to watch</ion-option>
+      </ion-select>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Episode</ion-label>
+      <ion-input [(ngModel)]="item.episode" placeholder="S01E01"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Category</ion-label>
+      <ion-select [(ngModel)]="item.category">
+          <ion-option>Action</ion-option>
+          <ion-option>Animation</ion-option>
+          <ion-option>Comedy</ion-option>
+          <ion-option>Horror</ion-option>
+          <ion-option>Romance</ion-option>
+          <ion-option>Sci-fi & Fantasy</ion-option>
+          <ion-option>Thriller</ion-option>
+        </ion-select>
+    </ion-item>
+
+<button ion-button block (click)="addItem(item)">Add</button>
+
+</ion-content>

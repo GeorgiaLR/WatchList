@@ -1,0 +1,60 @@
+<!--
+  Generated template for the LibraryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My Library</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<button navPush="AddWatchingItemPage" ion-fab mini float-right><ion-icon name="add"></ion-icon></button>
+<h3 text-center>My Tv-Shows & Movies</h3>
+<ion-list>
+
+    <button ion-item>
+        <ion-icon name="car" item-left></ion-icon>
+        <h2>Action</h2>
+      </button>
+      <button ion-item>
+        <ion-icon name="logo-octocat" item-left></ion-icon>
+        <h2>Animation</h2>
+      </button>
+      <button ion-item>
+        <ion-icon name="bowtie" item-left></ion-icon>
+        <h2>Comedy</h2>
+      </button>
+      <button ion-item>
+        <ion-icon name="cloudy-night" item-left></ion-icon>
+        <h2>Horror</h2>
+      </button>
+      <button ion-item>
+        <ion-icon name="heart-outline" item-left></ion-icon>
+        <h2>Romance</h2>
+      </button>
+      <button ion-item>
+        <ion-icon name="planet" item-left></ion-icon>
+        <h2>Sci-fi & Fantasy</h2>
+      </button>
+      <button ion-item>
+        <ion-icon name="finger-print" item-left></ion-icon>
+        <h2>Thriller</h2>
+      </button>
+
+
+  <!--
+  <button ion-item 
+  *ngFor="let itemGroup of itemCollection"
+  [navPush]="itemsPage" [navParams]="itemGroup">
+    <ion-icon [name]="itemGroup.icon" item-left></ion-icon>
+    <h2>{{ itemGroup.category | uppercase }}</h2>
+    <p>{{ itemGroup.items.length }} entries</p>
+  </button>-->
+</ion-list>
+</ion-content>
